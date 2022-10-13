@@ -1,0 +1,24 @@
+table.table-pagination {
+}
+table.table-pagination thead {
+    font-size:14px;
+}
+table.table-pagination thead tr:first-child {
+    background-color:#2e6aa7;
+    color: #fff;
+}
+table.table-pagination .pagination{
+    margin: 8px 0 !important;
+}
+table.table-pagination .lgks-widget .pull-right{
+    padding: 4px !important;
+    margin-top: 9px !important;
+    margin-left:10px;
+}
+table.table-pagination tr{
+    font-size:14px;
+}
+table.table-pagination select {
+    padding: 3px;
+    padding-right: 161px;
+}

@@ -1,0 +1,16 @@
+#watermark {
+ position:fixed;
+ text-align:center;
+ width: 100%;
+ top: 50%;
+ left: 0px;
+-webkit-transform: rotate(-30deg);
+-moz-transform: rotate(-30deg);
+-ms-transform: rotate(-30deg);
+-o-transform: rotate(-30deg);
+ opacity:0.1;
+ z-index:99;
+ color:red;
+ font-weight:bold;
+ font-size:3em;
+}

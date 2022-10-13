@@ -1,0 +1,4 @@
+{
+	"REQUIREDCOLS": ["guid", "blocked", "groupuid", "privilegeid", "access_level", "access_rule", "workflow"],
+	"EXCEPTIONTABLEKEYS": ["z_", "my_", "log_", "do_"]
+}

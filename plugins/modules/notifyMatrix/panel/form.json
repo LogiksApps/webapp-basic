@@ -1,0 +1,80 @@
+{
+	"hooks": {
+		"presubmit": {
+		    "modules":["bizrules"]
+		},
+		"postsubmit": {
+		    "modules":["bizflow","bizlogger"]
+		}
+	},
+	"source": {
+		"type": "sql",
+		"table": "sys_matrix_notify",
+		"where": ["md5(id)"]
+	},
+	"forcefill": {
+	    "groupuid":"#SESS_GROUP_NAME#",
+        "access_level":"#SESS_ACCESS_LEVEL#",
+        "privilegeid":"#SESS_PRIVILEGE_ID#",
+        "guid":"#SESS_GUID#"
+	},
+	"fields": {
+		"topic": {
+			"label": "Topic",
+			"group": "Info",
+			"required": true
+		},
+		"category": {
+			"label": "Category",
+			"group": "Info",
+			"type": "dataSelector",
+			"groupid":"notify_category",
+			"no-option":"Select Category"
+		},
+		"notify_type": {
+			"label": "Medium",
+			"group": "Info",
+			"type": "dataMethod",
+			"method":"getNotifyMediumList",
+			"no-option":"Select Type"
+		},
+		"notify_to": {
+			"label": "Notify To (Email/SMS)",
+			"group": "Info",
+			"type": "suggest",
+			"required": true
+		},
+		"notify_cc": {
+			"label": "Notify CC",
+			"group": "Info"
+		},
+		"notify_bcc": {
+			"label": "Notify BCC",
+			"group": "Info"
+		},
+		"subject": {
+			"label": "Subject",
+			"group": "Info",
+			"required": true
+		},
+		"blocked": {
+		    "label": "Blocked",
+			"type": "dataSelector",
+		    "groupid":"boolean",
+			"vmode":"edit",
+			"group": "Info",
+			"required": true
+		},
+		"body_template": {
+			"label": "Message (use % for variable defination)",
+			"group": "Body",
+			"type":"textarea",
+			"width": 12,
+			"required": true
+		}
+	},
+	"infoview": {
+		"groups": {
+		}
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"schema": "1.0",
+	"title": "HR",
+	"category": "HR",
+	"privilege": "*",
+	"blocked": false,
+	"rowlink": false,
+	"rowsPerPage": 20,
+	"showExtraColumn":false,
+	"custombar": false,
+	"hooks": {
+		"fieldupdate": {
+		    "modules":["bizflow","bizlogger"]
+		}
+	},
+	"source": {
+		"type": "sql",
+		"table": "sys_matrix_notify",
+		"cols": "sys_matrix_notify.id,sys_matrix_notify.topic,sys_matrix_notify.category,sys_matrix_notify.notify_type,sys_matrix_notify.notify_to,sys_matrix_notify.notify_cc,sys_matrix_notify.notify_bcc",
+	"where":{
+	    },
+	
+		"limit": 20
+	},
+	"actions": {
+	    "viewLogs":{
+	        "icon": "fa fa-file-text",
+			"label": "Logs"
+	    }
+	},
+	"buttons": {
+	    "viewInfo":{
+	        "icon":"fa fa-eye",
+	        "label":"View Information about notification"
+	    }
+	},
+	"datagrid": {
+		"sys_matrix_notify.id": {
+			"label": "ID",
+			"hidden": false,
+			"searchable": true,
+			"sortable": true,
+			"groupable": false,
+			"classes": "",
+			"style": "width:50px;",
+			"formatter": "text"
+		},
+		"sys_matrix_notify.topic": {
+			"label": "Topic",
+			"searchable": true,
+			"sortable": true
+		},
+		"sys_matrix_notify.category": {
+			"label": "Category",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true,
+            "filter": {
+                "type": "dataSelectorFromUniques",
+                "nofilter": "--",
+                "table": "sys_matrix_notify",
+                "columns": "category,category"
+            }
+		},
+		"sys_matrix_notify.notify_type": {
+			"label": "Medium",
+			"searchable": true,
+			"sortable": true,
+            "filter": {
+                "type": "dataSelectorFromUniques",
+                "nofilter": "--",
+                "table": "sys_matrix_notify",
+                "columns": "notify_type,notify_type"
+            }
+		},
+		"sys_matrix_notify.notify_to": {
+			"label": "Notify To (Email/SMS)",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"sys_matrix_notify.notify_cc": {
+			"label": "Notify CC",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"sys_matrix_notify.notify_bcc": {
+			"label": "Notify BCC",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		}
+	}
+}

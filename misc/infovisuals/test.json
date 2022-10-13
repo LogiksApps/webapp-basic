@@ -1,0 +1,58 @@
+{
+	"schema": "1.0",
+	"type":"infovisuals",
+	"title": "My Leave Applications",
+	"category": "personal",
+	"privilege": "*",
+	"blocked": false,
+	"custombar": false,
+	"hooks": {
+		
+	},
+	"actions": {
+		"forms@errands/new": {
+			"label": "New Errand",
+			"icon": "fa fa-plus",
+			"class": "btn btn-info"
+		}
+	},
+    "buttons":{
+       "infoview@errands/{hashid}": {
+			"label": "View Errands",
+			"icon": "fa fa-eye",
+			"class": "leads-lead"
+		},
+       "forms@errands/edit/{hashid}": {
+			"label": "Edit Errand",
+			"icon": "fa fa-pencil"
+		}
+    },
+	"cards":[
+        {
+        	"type": "data_numbers",
+        	"column":2,
+        	"iconclass":"fa fa-flag pull-left  fa-4x",
+        	"bodyclass":"alert alert-success",
+        	"content":"<h2>126</h2>",
+        	"height":200
+        },
+        {
+        	"type": "data_numbers",
+        	"column":2,
+        	"height":200,
+        	"iconclass":"fa fa-users pull-left  fa-4x",
+        	"bodyclass":"alert alert-danger",
+        	"source": [{
+        		"type": "sql",
+        		"table": "profiletbl",
+        		"cols": "count(*) as value, type as title1",
+        		"where": {
+        			"blocked": "false",
+        			"type IS NOT NULL AND length(type)>0 AND length(type)<10": "RAW"
+        		},
+        		"groupby": "type",
+        		"limit":1
+        	}]
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+	"schema": "1.0",
+	"title": "HR",
+	"category": "HR",
+	"privilege": "*",
+	"blocked": false,
+	"rowlink": false,
+	"rowsPerPage": 20,
+	"showExtraColumn":false,
+	"custombar": false,
+	"source": {
+		"type": "sql",
+		"table": "sys_matrix_cmds",
+		"cols": "sys_matrix_cmds.id,sys_matrix_cmds.title,sys_matrix_cmds.category,sys_matrix_cmds.cmd_type,sys_matrix_cmds.cmd_uri",
+    	"where":{
+	    },
+		"limit": 20
+	},
+	"actions": {
+	    "viewLogs":{
+	        "icon": "fa fa-file-text",
+			"label": "Logs"
+	    }
+	},
+	"buttons": {
+	   "viewInfo":{
+	        "icon":"fa fa-eye",
+	        "label":"View Information about Service"
+	    }
+	},
+	"datagrid": {
+		"sys_matrix_cmds.id": {
+			"label": "ID",
+			"hidden": false,
+			"searchable": true,
+			"sortable": true,
+			"groupable": false,
+			"classes": "",
+			"style": "width:50px;",
+			"formatter": "text"
+		},
+		"sys_matrix_cmds.title": {
+			"label": "Title",
+			"searchable": true,
+			"sortable": true
+		},
+		"sys_matrix_cmds.category": {
+			"label": "Category",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true,
+            "filter": {
+                "type": "dataSelectorFromUniques",
+                "nofilter": "--",
+                "table": "sys_matrix_cmds",
+                "columns": "category,category"
+            }
+		},
+		"sys_matrix_cmds.cmd_type": {
+			"label": "Type",
+			"searchable": true,
+			"sortable": true,
+            "filter": {
+                "type": "dataSelectorFromUniques",
+                "nofilter": "--",
+                "table": "sys_matrix_cmds",
+                "columns": "cmd_type,cmd_type"
+            }
+		},
+		"sys_matrix_cmds.cmd_uri": {
+			"label": "URI",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		}
+
+		
+	}
+}

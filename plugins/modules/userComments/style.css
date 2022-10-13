@@ -1,0 +1,108 @@
+.detailBox {
+    width:100%;
+    border:1px solid #bbb;
+    margin:0px;
+}
+.titleBox {
+    background-color:#fdfdfd;
+    padding:10px;
+}
+.titleBox label{
+  color:#444;
+  margin:0;
+  display:inline-block;
+}
+.actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+    /*background: #ececec;*/
+}
+.commentBox {
+    padding:10px;
+    border-top:1px dotted #bbb;
+}
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:80%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+    max-height: 50%;
+    overflow:auto;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+    position: relative;
+    /*border: 1px solid #ddd;*/
+    /*background:#fff;*/
+}
+.commentText{
+    padding:10px;
+    background:#e8e8e8;
+    min-width: 205px;
+    font-family: sans-serif;
+}
+.commentText:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -14;
+    width: 0;
+    height: 0;
+    border: 7px solid #e8e8e8;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background:#fff;
+}
+/*.commentText:before{*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: -14;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border: 7px solid #FFF;*/
+/*    border-left-color: rgba(0, 0, 0, 0);*/
+/*    border-bottom-color: rgba(0, 0, 0, 0);*/
+/*    background:#fff;*/
+/*}*/
+.commenterImage {
+    width:30px;
+    margin-right:19px;
+    height:30px;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+    font-size: 13px;
+}
+.commentText .userProfile {
+  font-weight: bold;
+  color: #333;
+}
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+
+.commentTitle {
+    font-weight:bold;
+}

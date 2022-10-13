@@ -1,0 +1,134 @@
+{
+	"schema": "report-v1",
+	"title": "Automator",
+	"category": "Advanced",
+	"privilege": "*",
+	"blocked": false,
+	"rowlink": false,
+	"rowsPerPage": 20,
+	"showExtraColumn": false,
+	"custombar": false,
+	"source": {
+		"type": "sql",
+		"table": "lgks_system_cronjobs",
+		"cols": "*",
+		"where": {
+			"site": "#REFSITE#"
+		},
+		"limit": 20
+	},
+	"actions": {
+        "viewJobLogs":{
+            "icon": "fa fa-file-text",
+			"label": "Logs"
+        },
+        "showPCronHelpInfo":{
+            "icon": "fa fa-info-circle fa-2x",
+			"label": "",
+			"class":"pull-right"
+        }
+	},
+	"buttons": {
+        "editScript":{
+            "icon": "fa fa-code",
+			"label": "Edit Script"
+        }
+	},
+	"datagrid": {
+		"id": {
+			"label": "ID",
+			"hidden": true,
+			"searchable": true,
+			"sortable": true,
+			"groupable": false,
+			"classes": "",
+			"style": "width:50px;",
+			"formatter": "text",
+			"alias": "accounts_payments.id"
+		},
+		"title": {
+			"label": "Title",
+			"searchable": true,
+			"sortable": true,
+			"hidden": false
+		},
+		"description": {
+		    "label": "Description",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"scriptpath": {
+			"label": "Script",
+			"searchable": true,
+			"sortable": true,
+			"hidden": false
+		},
+		"script_params": {
+		    "label": "Params",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"method": {
+		    "label": "Method",
+			"searchable": true,
+			"sortable": true,
+			"hidden": false
+		},
+		"schedule": {
+		    "label": "Schedule (mins)",
+			"searchable": true,
+			"sortable": true,
+			"hidden": false
+		},
+		"run_only_once": {
+		    "label": "Run Only Once",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"retired": {
+		    "label": "Retired",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"blocked": {
+		    "label": "Blocked",
+			"searchable": true,
+			"sortable": true,
+			"hidden": false
+		},
+		"last_completed": {
+		    "label": "Last Run",
+			"searchable": true,
+			"sortable": true,
+			"hidden": false
+		},
+		"created_by": {
+		    "label": "Created By",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"created_on": {
+		    "label": "Created On",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"edited_by": {
+		    "label": "Edited By",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"edited_on": {
+		    "label": "Edited On",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		}
+	}
+}

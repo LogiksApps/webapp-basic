@@ -1,0 +1,211 @@
+.sidebarContainer {
+    position: fixed;
+    left: -250px;
+    top: 48px;
+    bottom: 0px;
+    width: 250px;
+    z-index: 1000;
+
+    background: #f5f5f5;
+    color:#333;
+    border-color: #e2e2e2;
+
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.32, 1.25, .375, 1.15);
+    -moz-transition: -moz-transform .3s cubic-bezier(.32, 1.25, .375, 1.15);
+    -o-transition: -o-transform .3s cubic-bezier(.32, 1.25, .375, 1.15);
+    transition: transform .3s cubic-bezier(.32, 1.25, .375, 1.15);
+}
+.sidebarContainer.left {
+    border-right: 1px solid #E2E2E2;
+    border-top: 1px solid #E3E3E3;
+}
+.sidebarContainer.right {
+    left: auto;
+    right: -500px;
+    /*top: 48px;*/
+    top: 17px;
+    width: 500px;
+/*     border-left: 1px solid #E2E2E2; */
+
+    /*background: #444;*/
+    color: white;
+    padding: 0px;
+    padding-top: 30px;
+}
+.sidebarContainer.right>.nav-tabs {
+  margin-top: -30px;
+}
+.sidebarContainer.right>.tab-content {
+  height: 100%;
+  overflow: auto;
+}
+.sidebarContainer.open {
+    left: 0px;
+}
+.sidebarContainer.right.open {
+    right: 0px;
+    left: auto;
+}
+.sidebarContainer .sidebar {
+    background: transparent;
+}
+
+.sidebarContainer .sidebar-nav {
+  overflow: auto;
+  height: 100%;
+}
+
+.sidebarContainer .sidebarHeader {
+  padding: 7px;
+  height: 46px;
+  font-size: 20px;
+  line-height: 32px;
+  cursor: pointer;
+  background: #20638f;
+  color: white;
+}
+.sidebarContainer .sidebarHeader .glyphicon {
+  margin-right: 10px;margin-left: 6px;
+  font-size: 20px;
+  float: left;
+  border-radius: 50px;
+  padding: 5px;
+}
+.sidebarContainer .sidebarHeader .glyphicon:hover,.sidebarContainer .sidebarHeader .glyphicon:active {
+  background: #E9E9E9;
+  color: #333;
+}
+
+.sidebar-nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /*background-image: -webkit-linear-gradient(left, color-stop(#333333 10px), color-stop(#222222 10px));
+  background-image: linear-gradient(to right, #333333 10px, #222222 10px);
+  background-repeat: repeat-x;
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#ff222222', GradientType=1);*/
+}
+.sidebar-nav .metismenu {
+  margin-bottom:70px;
+}
+.sidebar-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sidebar-nav a, .sidebar-nav a:hover, .sidebar-nav a:focus, .sidebar-nav a:active {
+  outline: none;
+}
+.sidebar-nav ul li, .sidebar-nav ul a {
+  display: block;
+}
+.sidebar-nav ul a {
+  padding: 10px 20px;
+/*padding-left: 40px;*/
+  color: #333;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.05) inset;
+  position: relative;
+    
+  /*text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);*/
+}
+.sidebar-nav ul a:hover, .sidebar-nav ul a:focus, .sidebar-nav ul a:active {
+  color: #333;
+  text-decoration: none;
+}
+.sidebar-nav ul ul a {
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar-nav ul ul a:hover, .sidebar-nav ul ul a:focus, .sidebar-nav ul ul a:active {
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+  background-color: #E9E9E9;
+}
+.sidebar-nav ul ul ul a {
+  padding: 10px 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar-nav ul ul ul a:hover, .sidebar-nav ul ul ul a:focus, .sidebar-nav ul ul ul a:active {
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+  background-color: #E9E9E9;
+}
+
+.sidebar-nav li>ul>li>a {
+    border-top:0px;
+    box-shadow: none;
+}
+
+.sidebar-nav-item {
+  padding-left: 5px;
+}
+.sidebar-nav-item-icon {
+  padding-right: 5px;
+}
+
+
+
+.sidebarContainer .nav-tabs>li>a {
+  border-radius: 0px;
+  /*color: white;*/
+  color: #666;
+}
+.sidebarContainer .nav-tabs.nav-justified>.active>a, .sidebarContainer .nav-tabs.nav-justified>.active>a:focus, .sidebarContainer .nav-tabs.nav-justified>.active>a:hover {
+  color: #333;
+}
+
+.sidebarContainer .nav>li>a:focus, .sidebarContainer .nav>li>a:hover {
+  color: #777 !important;
+}
+
+.sidebar-nav .menuGroup>a {
+  background: #e7eaec;
+}
+.sidebar-nav .menuGroup .menuGroup>a {
+  background: transparent;
+}
+.tab-content .tab-pane {
+  color: #666;
+/*   padding: 5px; */
+}
+
+.sidebarContainer .barTitle {
+    margin: 0px;    margin-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 4px;
+}
+.sidebarContainer .barTitle a {
+    color:#333;
+}
+.sidebarContainer .barSubTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sidebarContainer .barSubTitle a {
+  color:#333;
+}
+#sidebarPane .lgks-widget{
+    padding:10px;
+}
+
+#sidebarRight .nav-tabs.nav-justified>li {
+    /* float: none; */
+    /*float: left;*/
+    /*width: 25% !important;*/
+   /*float:none !important;*/
+}
+
+
+
+.well {border:0px;}
+
+.componentTree {padding:0px;}
+.componentTree .list-group-item {border-radius: 0px;}
+.componentTree .list-group-item a {text-decoration: none;cursor: pointer;}
+.componentTree .list-group-item .glyphicon, .componentTree .list-group-item .fa {
+    margin-right: 5px;
+}
+
+.sidebar-nav ul hr {
+    margin: 2px 0px;
+}

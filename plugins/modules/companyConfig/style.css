@@ -1,0 +1,6 @@
+.settingsDivition .form-group {
+    width:50%;
+}
+.settingsDivition .form-group .form-control {
+    border-bottom: 1px solid #eee;
+}

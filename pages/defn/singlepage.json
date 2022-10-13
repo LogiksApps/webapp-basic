@@ -1,0 +1,15 @@
+{
+    "title": "Home",
+    "description": "",
+    "keywords": "",
+    "robot": "",
+    "slug": "module",
+    "template": "default",
+    "css": "style",
+    "js_preload": "",
+    "js_postload": "",
+    "modules_preload": "",
+    "modules_postload": "",
+    "enabled": "true",
+    "access": "public"
+}

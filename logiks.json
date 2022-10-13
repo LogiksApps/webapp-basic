@@ -1,0 +1,30 @@
+{
+    "name": "Logiks DAMP",
+    "version": "1.0.0",
+    "status": "beta",
+    "type": "app",
+    "package":"silk.damp.app",
+    "description": "",
+    "keywords": "",
+    "license": "SILK License",
+    "homepage": "http://smartinfologiks.com",
+    "logiks-core": {
+        "min": "4.0",
+        "max": "*"
+    },
+    "files": [],
+    "ignore": [
+        ".git",
+        "Readme.txt"
+    ],
+    "dependencies": [],
+    "devDependencies": [],
+    "permissions":[],
+    "schema":[],
+    "authors": [
+        {
+            "name": "SILK Admin",
+            "email": "admin@smartinfologiks.com"
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+.componentTree .list-group-item.list-file {
+	padding-left: 25px;
+}
+#pgtoolbar .nav.navbar-nav.navbar-left {
+	padding-right:20px;
+  border-right: 1px solid #EEE;
+}
+#pgtoolbar .fa.pull-right {
+	font-size: 20px !important;
+}
+#pgtoolbar .titleContent {
+	 padding: 10px
+}
+.componentTree .list-group-item.active a {
+	color:white;
+}
+.contentPreview {
+	padding: 7px;
+	padding-right: 13px;
+	text-align: justify;
+}
+.contentPreview h1.metaTitle {
+	margin-top: 0px;
+}
+.contentPreview .metaLabel {
+	margin-left:5px;
+	margin-right:5px;
+	float:right;
+}
+
+#pgtoolbar .onOpenEditor {
+    text-decoration: none;
+    padding: 13px;
+    float: left;
+}
+#pgtoolbar .onOpenEditor:hover {
+	background:#CDCDCD;
+}
+
+#pgtoolbar .onOpenEditor.highlight {
+	background: #3c8dbc;
+	color:white;
+	display: inline-block;
+}
+#toolbtn_editTemplate {display:none;}
+
+
+
+
+.componentTree .list-group-item.list-file {
+	padding-left: 25px;
+}
+.componentTree .glyphicon,.componentTree .fa {
+	margin-right: 5px;
+	margin-left: -5px;
+}
+.componentTree .list-group-item {
+	background: transparent;
+	border: 0px;
+	border-radius: 0px;
+}
+.componentTree .list-group-item.active {
+	background-color: #337ab7;
+	border-color: #337ab7;
+}
+.componentTree .list-group-item.active a {
+	color: #fff;
+	text-decoration: none;
+}
+.componentTree a:hover,.componentTree a:active {
+	text-decoration: none;
+}
+#pgtoolbar .nav.navbar-nav.navbar-left {
+	padding-right:20px;
+  border-right: 1px solid #EEE;
+}
+#pgtoolbar .fa.pull-right {
+	font-size: 20px !important;
+}
+#pgtoolbar .titleContent {
+	 padding: 10px;
+	 float:left;
+}
+.contentPreview {
+	padding: 7px;
+	padding-right: 13px;
+	text-align: justify;
+	max-width: 1024px;
+	margin: auto;
+	border: 1px solid #EEE;
+	margin-top: 5px;
+}
+.contentPreview h1.metaTitle {
+	margin-top: 0px;
+	text-align:left;
+}
+.contentPreview .metaLabel {
+	margin-left:5px;
+	margin-right:5px;
+	float:right;
+}
+
+.nicEdit-panel .fa {
+	cursor:pointer;
+	margin: 5px;
+	margin-bottom: 0px;
+	color: black;
+	text-decoration: none;
+}

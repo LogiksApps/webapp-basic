@@ -1,0 +1,149 @@
+{
+	"hooks":{
+		"preload":{
+			"helpers":["countries","timezones"]
+		}
+	},
+	"source":{
+		"type":"sql",
+		"table":"my_company",
+		"where":["md5(id)"]
+	},
+	"forcefill":{
+	    "groupuid":"#SESS_GROUP_NAME#",
+        "access_level":"#SESS_ACCESS_LEVEL#",
+        "privilegeid":"#SESS_PRIVILEGE_ID#"
+	},
+	"fields": {
+		"name": {
+			"label": "Company Name",
+			"required":true,
+			"group":"Company"
+		},
+		"branch_type":{
+			"label": "Branch Type",
+			"type": "dataSelector",
+			"groupid": "branch_type",
+			"group":"Company"
+		},
+		"com_code":{
+			"label": "Company Code(Ex:AB)",
+			"required":true,
+			"group":"Company"
+		},
+		"category": {
+			"label": "Category",
+			"type": "dataSelector",
+			"groupid": "org_category",
+			"group":"Company"
+		},
+		"biz_type":{
+			"label": "Business",
+			"type": "dataSelector",
+			"groupid": "org_type",
+			"group":"Company"
+		},
+		"about": {
+			"label": "About Company",
+			"type": "textarea",
+			"width": "12",
+			"group":"Company"
+		},
+		"email": {
+			"label": "E-mail",
+			"type": "email",
+			"group":"communication"
+		},
+		"landline": {
+			"label": "Landline",
+			"type": "phone",
+			"group":"communication"
+		},
+		"address":{
+			"label":"Address",
+			"type":"textarea",
+			"group":"communication"
+		},
+		"state_code":{
+			"label":"Region/State Code",
+			"group":"communication",
+			"required":true
+		},
+		"country":{
+			"label":"Country",
+			"group":"communication",
+			"type":"dataMethod",
+			"method":{
+				"name":"getCountrySelector",
+				"valuefield":"default"
+			},
+			"required":true
+		},
+		"zipcode":{
+			"label":"Zipcode/PIN Code",
+			"group":"communication"
+		},
+		"facebook":{
+			"label":"Facebook",
+			"type":"social@facebook",
+			"group":"social"
+		},
+		"twitter":{
+			"label":"Twitter",
+			"type":"social@twitter",
+			"group":"social"
+		},
+		"instagram":{
+			"label":"Instagram",
+			"type":"social@instagram",
+			"group":"social"
+		},
+		"linkedin":{
+			"label":"Linkedin",
+			"type":"social@linkedin",
+			"group":"social"
+		},
+		"website":{
+			"label":"Website",
+			"type":"url",
+			"group":"social"
+		},
+		"currency":{
+			"label":"Currency",
+			"type": "dataSelector",
+			"groupid": "currency",
+			"group":"Setup",
+			"width":12
+		},
+		"date_format":{
+			"label":"Date Format",
+			"type": "dataSelector",
+			"groupid": "date_format",
+			"group":"Setup"
+		},
+		"time_format":{
+			"label":"Time Format",
+			"type": "dataSelector",
+			"groupid": "time_format",
+			"group":"Setup"
+		},
+		"timezone":{
+			"label":"Timezone",
+			"group":"Setup"
+		},
+		"timezone_utc":{
+			"label":"UTC Zone",
+			"group":"Setup"
+		},
+		"logo":{
+			"label":"Logos",
+			"type":"url",
+			"group":"Graphics"
+		},
+		"letter_head":{
+			"label":"Letter Head",
+			"type":"url",
+			"group":"Graphics"
+		}
+	}
+}

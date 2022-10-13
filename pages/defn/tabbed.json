@@ -1,0 +1,24 @@
+{
+    "title": "Home",
+    "description": "PAGE-Description",
+    "keywords": "PAGE-Keyword",
+    "robot": "no follow - x",
+    "slug": "",
+    "template": "default",
+    "css": "style",
+    "js_preload": "",
+    "js_postload": "",
+    "modules_preload": "",
+    "modules_postload": "",
+    "enabled": "true",
+    "access": "public",
+    "meta": [
+        {
+            "name": "xxx",
+            "http-equiv": "asdad",
+            "content": "qweqwe",
+            "charset": "utf-8",
+            "lang": "en"
+        }
+    ]
+}

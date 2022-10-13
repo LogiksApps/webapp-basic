@@ -1,0 +1,77 @@
+{
+	"hooks": {
+		"preload": {
+			"helpers": ["countries"]
+		},
+		"presubmit": {
+		    "modules":["bizrules"]
+		},
+		"postsubmit": {
+		    "modules":["bizflow","bizlogger"]
+		}
+	},
+	"source": {
+		"type": "sql",
+		"table": "sys_matrix_cmds",
+		"where": ["md5(id)"]
+	},
+	"forcefill": {
+	    "groupuid":"#SESS_GROUP_NAME#",
+        "access_level":"#SESS_ACCESS_LEVEL#",
+        "privilegeid":"#SESS_PRIVILEGE_ID#",
+        "guid":"#SESS_GUID#"
+	},
+	"fields": {
+		"title": {
+			"label": "Title",
+			"group": "Info",
+			"required": true
+		},
+		"cmd_uri": {
+			"label": "URL (use % for variable defination)",
+			"group": "Info",
+			"type": "url",
+            "required":true
+		},
+		"category": {
+			"label": "Category",
+			"group": "Info",
+			"type": "dataSelector",
+			"groupid":"cmd_category",
+			"no-option":"Select Category"
+		},
+		"cmd_type": {
+			"label": "Type",
+			"group": "Info",
+			"type":"select",
+		    "options":{
+                "GET":"GET",
+		        "POST":"POST",
+		        "PUT":"PUT",
+		        "DELETE":"DELETE"
+		    }
+		},
+		"cmd_params": {
+			"label": "Params",
+			"group": "Params",
+			"type": "textarea",
+			"width":12
+		},
+		"cmd_payload": {
+			"label": "Payload (use % for variable defination)",
+			"group": "Payload",
+			"type": "textarea",
+			"width":12
+		},
+		"cmd_headers": {
+			"label": "Headers (use % for variable defination)",
+			"group": "Headers",
+			"type": "textarea",
+			"width":12
+		}
+	},
+	"infoview": {
+		"groups": {}
+	}
+
+}

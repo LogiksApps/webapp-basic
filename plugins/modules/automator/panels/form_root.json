@@ -1,0 +1,64 @@
+{   
+	"source": {
+		"type": "sql",
+		"table": "lgks_system_cronjobs",
+		"where": ["md5(id)"]
+	},
+	"forcefill": {
+	    "site": "#SITENAME#",
+        "guid":"#SESS_GUID#"
+	},
+	"fields": {
+        "title": {
+			"label": "Job Title",
+			"required": true,
+			"width": 6
+		},
+		"method": {
+		    "label": "Method",
+		    "type":"select",
+		    "options":{
+		        "LOCAL":"LOCAL",
+		        "POST":"POST",
+		        "GET":"GET"
+		    }
+		},
+		"scriptpath": {
+			"label": "Script",
+			"type": "dataMethod",
+			"method":"getPCronScriptList",
+			"required": true
+		},
+		"schedule": {
+		    "label": "Schedule (mins)",
+		    "type":"number"
+		},
+		"run_only_once": {
+		    "label": "Run Only Once",
+			"type": "dataSelector",
+			"groupid":"boolean",
+			"dbkey":"app",
+			"required": true
+		},
+		"blocked": {
+		    "label": "Blocked",
+			"type": "dataSelector",
+		    "groupid":"boolean",
+			"dbkey":"app",
+			"vmode":"edit",
+			"required": true
+		},
+		"script_params": {
+		    "label": "Params (JSON)",
+		    "type":"textarea",
+		    "group": "Params",
+		    "width":12
+		},
+		"description": {
+		    "label": "Description",
+			"type":"textarea",
+			"group": "Details",
+			"width":12
+		}
+    }
+}

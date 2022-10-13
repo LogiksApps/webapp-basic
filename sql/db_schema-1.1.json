@@ -1,0 +1,1535 @@
+{
+    "do_links": {
+        "info": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "logiks4_silkerp2",
+            "TABLE_NAME": "do_links",
+            "TABLE_TYPE": "BASE TABLE",
+            "ENGINE": "MyISAM",
+            "VERSION": "10",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_ROWS": "0",
+            "AVG_ROW_LENGTH": "0",
+            "DATA_LENGTH": "0",
+            "MAX_DATA_LENGTH": "281474976710655",
+            "INDEX_LENGTH": "1024",
+            "DATA_FREE": "0",
+            "AUTO_INCREMENT": "1",
+            "CREATE_TIME": "2022-10-13 14:36:51",
+            "UPDATE_TIME": "2022-10-13 14:36:51",
+            "CHECK_TIME": null,
+            "TABLE_COLLATION": "utf8_general_ci",
+            "CHECKSUM": null,
+            "CREATE_OPTIONS": "",
+            "TABLE_COMMENT": ""
+        },
+        "columns": {
+            "id": [
+                "id",
+                "int(10) unsigned",
+                "NO",
+                "PRI",
+                null,
+                "auto_increment"
+            ],
+            "guid": [
+                "guid",
+                "varchar(155)",
+                "YES",
+                "",
+                "global",
+                ""
+            ],
+            "groupuid": [
+                "groupuid",
+                "varchar(55)",
+                "NO",
+                "",
+                "hq",
+                ""
+            ],
+            "menuid": [
+                "menuid",
+                "varchar(255)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "title": [
+                "title",
+                "varchar(255)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "category": [
+                "category",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "menugroup": [
+                "menugroup",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "class": [
+                "class",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "link": [
+                "link",
+                "varchar(255)",
+                "YES",
+                "",
+                "#",
+                ""
+            ],
+            "iconpath": [
+                "iconpath",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "tips": [
+                "tips",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "site": [
+                "site",
+                "varchar(255)",
+                "YES",
+                "",
+                "*",
+                ""
+            ],
+            "privilege": [
+                "privilege",
+                "varchar(500)",
+                "YES",
+                "",
+                "*",
+                ""
+            ],
+            "blocked": [
+                "blocked",
+                "enum('true','false')",
+                "YES",
+                "",
+                "false",
+                ""
+            ],
+            "onmenu": [
+                "onmenu",
+                "enum('true','false')",
+                "YES",
+                "",
+                "true",
+                ""
+            ],
+            "target": [
+                "target",
+                "varchar(55)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "device": [
+                "device",
+                "varchar(20)",
+                "YES",
+                "",
+                "*",
+                ""
+            ],
+            "to_check": [
+                "to_check",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "weight": [
+                "weight",
+                "int(11)",
+                "YES",
+                "",
+                "0",
+                ""
+            ],
+            "created_by": [
+                "created_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "created_on": [
+                "created_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_by": [
+                "edited_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_on": [
+                "edited_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ]
+        }
+    },
+    "do_lists": {
+        "info": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "logiks4_silkerp2",
+            "TABLE_NAME": "do_lists",
+            "TABLE_TYPE": "BASE TABLE",
+            "ENGINE": "MyISAM",
+            "VERSION": "10",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_ROWS": "0",
+            "AVG_ROW_LENGTH": "0",
+            "DATA_LENGTH": "0",
+            "MAX_DATA_LENGTH": "281474976710655",
+            "INDEX_LENGTH": "1024",
+            "DATA_FREE": "0",
+            "AUTO_INCREMENT": "1",
+            "CREATE_TIME": "2022-10-13 14:37:07",
+            "UPDATE_TIME": "2022-10-13 14:37:07",
+            "CHECK_TIME": null,
+            "TABLE_COLLATION": "utf8_general_ci",
+            "CHECKSUM": null,
+            "CREATE_OPTIONS": "",
+            "TABLE_COMMENT": ""
+        },
+        "columns": {
+            "id": [
+                "id",
+                "int(10) unsigned",
+                "NO",
+                "PRI",
+                null,
+                "auto_increment"
+            ],
+            "guid": [
+                "guid",
+                "varchar(155)",
+                "YES",
+                "",
+                "global",
+                ""
+            ],
+            "groupuid": [
+                "groupuid",
+                "varchar(55)",
+                "NO",
+                "",
+                "hq",
+                ""
+            ],
+            "groupid": [
+                "groupid",
+                "varchar(255)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "title": [
+                "title",
+                "varchar(255)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "value": [
+                "value",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "class": [
+                "class",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "site": [
+                "site",
+                "varchar(255)",
+                "YES",
+                "",
+                "*",
+                ""
+            ],
+            "sortorder": [
+                "sortorder",
+                "int(10)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "privilege": [
+                "privilege",
+                "varchar(50)",
+                "YES",
+                "",
+                "*",
+                ""
+            ],
+            "blocked": [
+                "blocked",
+                "varchar(5)",
+                "YES",
+                "",
+                "false",
+                ""
+            ],
+            "privilegeid": [
+                "privilegeid",
+                "int(11)",
+                "NO",
+                "",
+                "0",
+                ""
+            ],
+            "access_rule": [
+                "access_rule",
+                "varchar(155)",
+                "NO",
+                "",
+                "privilege",
+                ""
+            ],
+            "access_level": [
+                "access_level",
+                "int(11)",
+                "NO",
+                "",
+                "1000",
+                ""
+            ],
+            "created_by": [
+                "created_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "created_on": [
+                "created_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_by": [
+                "edited_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_on": [
+                "edited_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ]
+        }
+    },
+    "my_branches": {
+        "info": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "logiks4_silkerp2",
+            "TABLE_NAME": "my_branches",
+            "TABLE_TYPE": "BASE TABLE",
+            "ENGINE": "MyISAM",
+            "VERSION": "10",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_ROWS": "1",
+            "AVG_ROW_LENGTH": "156",
+            "DATA_LENGTH": "2112",
+            "MAX_DATA_LENGTH": "281474976710655",
+            "INDEX_LENGTH": "2048",
+            "DATA_FREE": "1956",
+            "AUTO_INCREMENT": "12",
+            "CREATE_TIME": "2022-09-20 23:40:46",
+            "UPDATE_TIME": "2022-09-20 23:41:42",
+            "CHECK_TIME": null,
+            "TABLE_COLLATION": "utf8_general_ci",
+            "CHECKSUM": null,
+            "CREATE_OPTIONS": "",
+            "TABLE_COMMENT": ""
+        },
+        "columns": {
+            "id": [
+                "id",
+                "int(11)",
+                "NO",
+                "PRI",
+                null,
+                "auto_increment"
+            ],
+            "guid": [
+                "guid",
+                "varchar(155)",
+                "YES",
+                "",
+                "global",
+                ""
+            ],
+            "groupuid": [
+                "groupuid",
+                "varchar(55)",
+                "NO",
+                "",
+                "hq",
+                ""
+            ],
+            "branch_code": [
+                "branch_code",
+                "varchar(50)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "company_id": [
+                "company_id",
+                "int(11)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "name": [
+                "name",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "category": [
+                "category",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "type": [
+                "type",
+                "varchar(155)",
+                "NO",
+                "",
+                "",
+                ""
+            ],
+            "group": [
+                "group",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "tags": [
+                "tags",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "establishment": [
+                "establishment",
+                "date",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "manager": [
+                "manager",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "mail": [
+                "mail",
+                "varchar(250)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "landline": [
+                "landline",
+                "varchar(55)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "address": [
+                "address",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "region": [
+                "region",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "city": [
+                "city",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "country": [
+                "country",
+                "varchar(100)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "zipcode": [
+                "zipcode",
+                "varchar(20)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "contact_person1": [
+                "contact_person1",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "contact_designation1": [
+                "contact_designation1",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "contact_person2": [
+                "contact_person2",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "contact_designation2": [
+                "contact_designation2",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "geofence_enabled": [
+                "geofence_enabled",
+                "enum('true','false')",
+                "YES",
+                "",
+                "true",
+                ""
+            ],
+            "geolocation": [
+                "geolocation",
+                "varchar(250)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "geofence_radius": [
+                "geofence_radius",
+                "varchar(15)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "avatar": [
+                "avatar",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "blocked": [
+                "blocked",
+                "enum('false','true')",
+                "NO",
+                "",
+                "false",
+                ""
+            ],
+            "created_by": [
+                "created_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "created_on": [
+                "created_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_by": [
+                "edited_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_on": [
+                "edited_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ]
+        }
+    },
+    "my_company": {
+        "info": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "logiks4_silkerp2",
+            "TABLE_NAME": "my_company",
+            "TABLE_TYPE": "BASE TABLE",
+            "ENGINE": "MyISAM",
+            "VERSION": "10",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_ROWS": "2",
+            "AVG_ROW_LENGTH": "180",
+            "DATA_LENGTH": "360",
+            "MAX_DATA_LENGTH": "281474976710655",
+            "INDEX_LENGTH": "2048",
+            "DATA_FREE": "0",
+            "AUTO_INCREMENT": "3",
+            "CREATE_TIME": "2022-09-20 23:40:46",
+            "UPDATE_TIME": "2022-10-13 15:27:11",
+            "CHECK_TIME": null,
+            "TABLE_COLLATION": "utf8_general_ci",
+            "CHECKSUM": null,
+            "CREATE_OPTIONS": "",
+            "TABLE_COMMENT": ""
+        },
+        "columns": {
+            "id": [
+                "id",
+                "int(11)",
+                "NO",
+                "PRI",
+                null,
+                "auto_increment"
+            ],
+            "guid": [
+                "guid",
+                "varchar(155)",
+                "YES",
+                "",
+                "global",
+                ""
+            ],
+            "groupuid": [
+                "groupuid",
+                "varchar(55)",
+                "NO",
+                "",
+                "hq",
+                ""
+            ],
+            "com_code": [
+                "com_code",
+                "varchar(50)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "name": [
+                "name",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "category": [
+                "category",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "biz_type": [
+                "biz_type",
+                "varchar(155)",
+                "NO",
+                "",
+                "proprietorship",
+                ""
+            ],
+            "tags": [
+                "tags",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "establishment": [
+                "establishment",
+                "date",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "branch_type": [
+                "branch_type",
+                "varchar(55)",
+                "NO",
+                "",
+                "hq",
+                ""
+            ],
+            "email": [
+                "email",
+                "varchar(250)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "landline": [
+                "landline",
+                "varchar(55)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "address": [
+                "address",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "state_code": [
+                "state_code",
+                "varchar(55)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "country": [
+                "country",
+                "varchar(100)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "zipcode": [
+                "zipcode",
+                "varchar(20)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "geoloc": [
+                "geoloc",
+                "varchar(100)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "website": [
+                "website",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "facebook": [
+                "facebook",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "twitter": [
+                "twitter",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "instagram": [
+                "instagram",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "linkedin": [
+                "linkedin",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "date_format": [
+                "date_format",
+                "varchar(25)",
+                "NO",
+                "",
+                "d\/m\/Y",
+                ""
+            ],
+            "time_format": [
+                "time_format",
+                "varchar(25)",
+                "NO",
+                "",
+                "H:i:s",
+                ""
+            ],
+            "timezone": [
+                "timezone",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "timezone_utc": [
+                "timezone_utc",
+                "int(11)",
+                "NO",
+                "",
+                "0",
+                ""
+            ],
+            "directors": [
+                "directors",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "currency": [
+                "currency",
+                "varchar(5)",
+                "NO",
+                "",
+                "Rs.",
+                ""
+            ],
+            "tinno": [
+                "tinno",
+                "varchar(35)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "pan": [
+                "pan",
+                "varchar(55)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "gstno": [
+                "gstno",
+                "varchar(55)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "turn_over": [
+                "turn_over",
+                "int(11)",
+                "NO",
+                "",
+                "0",
+                ""
+            ],
+            "logo": [
+                "logo",
+                "varchar(250)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "letter_head": [
+                "letter_head",
+                "varchar(255)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "about": [
+                "about",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "setup_params": [
+                "setup_params",
+                "text",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "blocked": [
+                "blocked",
+                "enum('false','true')",
+                "NO",
+                "",
+                "false",
+                ""
+            ],
+            "created_by": [
+                "created_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "created_on": [
+                "created_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_by": [
+                "edited_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_on": [
+                "edited_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ]
+        }
+    },
+    "my_company_banks": {
+        "info": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "logiks4_silkerp2",
+            "TABLE_NAME": "my_company_banks",
+            "TABLE_TYPE": "BASE TABLE",
+            "ENGINE": "MyISAM",
+            "VERSION": "10",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_ROWS": "0",
+            "AVG_ROW_LENGTH": "0",
+            "DATA_LENGTH": "0",
+            "MAX_DATA_LENGTH": "281474976710655",
+            "INDEX_LENGTH": "1024",
+            "DATA_FREE": "0",
+            "AUTO_INCREMENT": "1",
+            "CREATE_TIME": "2022-09-20 23:41:26",
+            "UPDATE_TIME": "2022-09-20 23:41:26",
+            "CHECK_TIME": null,
+            "TABLE_COLLATION": "utf8_general_ci",
+            "CHECKSUM": null,
+            "CREATE_OPTIONS": "",
+            "TABLE_COMMENT": ""
+        },
+        "columns": {
+            "id": [
+                "id",
+                "int(11)",
+                "NO",
+                "PRI",
+                null,
+                "auto_increment"
+            ],
+            "guid": [
+                "guid",
+                "varchar(155)",
+                "YES",
+                "",
+                "global",
+                ""
+            ],
+            "groupuid": [
+                "groupuid",
+                "varchar(55)",
+                "NO",
+                "",
+                "hq",
+                ""
+            ],
+            "company_id": [
+                "company_id",
+                "int(11)",
+                "NO",
+                "",
+                "1",
+                ""
+            ],
+            "bank_name": [
+                "bank_name",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "bank_code": [
+                "bank_code",
+                "varchar(25)",
+                "NO",
+                "",
+                "na",
+                ""
+            ],
+            "bank_branch": [
+                "bank_branch",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "bank_address": [
+                "bank_address",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "bank_state": [
+                "bank_state",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "bank_country": [
+                "bank_country",
+                "varchar(155)",
+                "NO",
+                "",
+                "india",
+                ""
+            ],
+            "bank_zipcode": [
+                "bank_zipcode",
+                "varchar(25)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "bank_acno_name": [
+                "bank_acno_name",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "bank_acno": [
+                "bank_acno",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "bank_ifsc_code": [
+                "bank_ifsc_code",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "bank_swift_code": [
+                "bank_swift_code",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "bank_xtras": [
+                "bank_xtras",
+                "varchar(255)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "bank_notes": [
+                "bank_notes",
+                "varchar(255)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "blocked": [
+                "blocked",
+                "enum('false','true')",
+                "NO",
+                "",
+                "false",
+                ""
+            ],
+            "created_by": [
+                "created_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "created_on": [
+                "created_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_by": [
+                "edited_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_on": [
+                "edited_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ]
+        }
+    },
+    "my_company_settings": {
+        "info": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "logiks4_silkerp2",
+            "TABLE_NAME": "my_company_settings",
+            "TABLE_TYPE": "BASE TABLE",
+            "ENGINE": "MyISAM",
+            "VERSION": "10",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_ROWS": "3",
+            "AVG_ROW_LENGTH": "150",
+            "DATA_LENGTH": "452",
+            "MAX_DATA_LENGTH": "281474976710655",
+            "INDEX_LENGTH": "5120",
+            "DATA_FREE": "0",
+            "AUTO_INCREMENT": "7",
+            "CREATE_TIME": "2022-09-20 23:41:26",
+            "UPDATE_TIME": "2022-09-20 23:45:55",
+            "CHECK_TIME": null,
+            "TABLE_COLLATION": "utf8_general_ci",
+            "CHECKSUM": null,
+            "CREATE_OPTIONS": "",
+            "TABLE_COMMENT": ""
+        },
+        "columns": {
+            "id": [
+                "id",
+                "int(11)",
+                "NO",
+                "PRI",
+                null,
+                "auto_increment"
+            ],
+            "guid": [
+                "guid",
+                "varchar(155)",
+                "YES",
+                "",
+                "global",
+                ""
+            ],
+            "groupuid": [
+                "groupuid",
+                "varchar(55)",
+                "NO",
+                "",
+                "hq",
+                ""
+            ],
+            "company_id": [
+                "company_id",
+                "int(11)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "param_title": [
+                "param_title",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "param_value": [
+                "param_value",
+                "varchar(255)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "param_module": [
+                "param_module",
+                "varchar(75)",
+                "NO",
+                "",
+                "system",
+                ""
+            ],
+            "param_hash": [
+                "param_hash",
+                "varchar(92)",
+                "NO",
+                "UNI",
+                null,
+                ""
+            ],
+            "blocked": [
+                "blocked",
+                "enum('false','true')",
+                "YES",
+                "",
+                "false",
+                ""
+            ],
+            "privilegeid": [
+                "privilegeid",
+                "int(11)",
+                "NO",
+                "",
+                "0",
+                ""
+            ],
+            "access_rule": [
+                "access_rule",
+                "varchar(155)",
+                "NO",
+                "",
+                "privilege",
+                ""
+            ],
+            "access_level": [
+                "access_level",
+                "int(11)",
+                "NO",
+                "",
+                "1000",
+                ""
+            ],
+            "created_by": [
+                "created_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "created_on": [
+                "created_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_by": [
+                "edited_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_on": [
+                "edited_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ]
+        }
+    },
+    "my_departments": {
+        "info": {
+            "TABLE_CATALOG": "def",
+            "TABLE_SCHEMA": "logiks4_silkerp2",
+            "TABLE_NAME": "my_departments",
+            "TABLE_TYPE": "BASE TABLE",
+            "ENGINE": "MyISAM",
+            "VERSION": "10",
+            "ROW_FORMAT": "Dynamic",
+            "TABLE_ROWS": "1",
+            "AVG_ROW_LENGTH": "76",
+            "DATA_LENGTH": "76",
+            "MAX_DATA_LENGTH": "281474976710655",
+            "INDEX_LENGTH": "3072",
+            "DATA_FREE": "0",
+            "AUTO_INCREMENT": "2",
+            "CREATE_TIME": "2022-09-20 23:40:46",
+            "UPDATE_TIME": "2022-09-20 23:40:46",
+            "CHECK_TIME": null,
+            "TABLE_COLLATION": "utf8_general_ci",
+            "CHECKSUM": null,
+            "CREATE_OPTIONS": "",
+            "TABLE_COMMENT": ""
+        },
+        "columns": {
+            "id": [
+                "id",
+                "int(11)",
+                "NO",
+                "PRI",
+                null,
+                "auto_increment"
+            ],
+            "guid": [
+                "guid",
+                "varchar(155)",
+                "YES",
+                "",
+                "global",
+                ""
+            ],
+            "groupuid": [
+                "groupuid",
+                "varchar(55)",
+                "NO",
+                "",
+                "hq",
+                ""
+            ],
+            "company_id": [
+                "company_id",
+                "int(11)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "branch_code": [
+                "branch_code",
+                "varchar(25)",
+                "YES",
+                "",
+                "*",
+                ""
+            ],
+            "department_code": [
+                "department_code",
+                "varchar(25)",
+                "NO",
+                "UNI",
+                null,
+                ""
+            ],
+            "department_name": [
+                "department_name",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "department_group": [
+                "department_group",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "tags": [
+                "tags",
+                "varchar(200)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "department_manager": [
+                "department_manager",
+                "varchar(155)",
+                "YES",
+                "",
+                null,
+                ""
+            ],
+            "geofence_enabled": [
+                "geofence_enabled",
+                "enum('true','false')",
+                "YES",
+                "",
+                "true",
+                ""
+            ],
+            "blocked": [
+                "blocked",
+                "enum('false','true')",
+                "NO",
+                "",
+                "false",
+                ""
+            ],
+            "created_by": [
+                "created_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "created_on": [
+                "created_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_by": [
+                "edited_by",
+                "varchar(155)",
+                "NO",
+                "",
+                null,
+                ""
+            ],
+            "edited_on": [
+                "edited_on",
+                "datetime",
+                "NO",
+                "",
+                null,
+                ""
+            ]
+        }
+    }
+}

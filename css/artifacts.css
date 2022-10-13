@@ -1,0 +1,22 @@
+.clr_priority {
+  color:#AAA;
+}
+.clr_priority_vhigh {
+  color:red;
+}
+.clr_priority_high {
+  color:red;
+}
+.clr_priority_medium {
+  color:blue;
+}
+.clr_priority_low {
+  color:yellow;
+}
+.clr_priority_vlow {
+  color:yellow;
+}
+
+.flag {
+  
+}

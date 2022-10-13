@@ -1,0 +1,304 @@
+.randomthoughtSection{
+	float: left;
+	width: 100%;
+	padding-top: 30px;
+
+}
+
+.reviewBlock{
+	float: left;
+    width: 100%;
+    /* margin-bottom: 15px; */
+    border-bottom: 1px solid rgba(204, 204, 204, 0.38);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.randomthoughtMain .reviewBlock figure img{
+	
+	width: 48px;
+	
+}
+.randomthoughtMain .reviewBlock .reviewContent{
+	padding-left: 0;
+	margin-left: -18px;
+}
+.randomthoughtMain  .reviewBlock .reviewContent h3{
+	margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.randomthoughtMain  .reviewBlock .reviewContent small{
+	font-size: 12px;
+}
+.randomthoughtMain .reviewBlock .reviewContent p{
+	margin-bottom: 5px;
+}
+.randomthoughtMain .reviewBlock .reviewContent .fa{
+	margin-left: 7px;
+    font-size: 16px;
+    color: #8b9ba2;
+}
+.randomthoughtMain .reviewBlock .reviewForm{
+	padding-left: 0;
+	margin-left: -18px;
+}
+.randomthoughtMain .reviewBlock .reviewForm .form-control{
+	height: 48px;
+    border-radius: 0;
+    border-color: #9a9a9a;
+    resize: none;
+	border-radius: 0;
+}
+.randomthoughtMain .reviewBlock .replayView{
+	float: left;
+    width: 100%;
+    padding-top: 13px;
+}
+.randomthoughtMain .reviewrplyBlock{
+	float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.randomthoughtMain .reviewrplyform .form-control{
+	height: 45px;
+    border-radius: 0;
+    border-color: #9a9a9a;
+    border-radius: 0;
+}
+.randomthoughtMain .btn{
+	border-radius: 0;
+}
+.randomthoughtMain .submitBtn{
+	color: #fff;
+    background: #339c9c;
+}
+.randomthoughtMain .form-group{
+	margin-bottom: 10px;
+}
+.randomthoughtMain .formBtns{
+	float: left;
+	width: 100%;
+}
+#btn-holder{
+	display: none;
+}
+ #comment::-webkit-scrollbar{
+	display: none;
+}
+
+/*----------event-------------*/
+
+.eventSection{
+	float: left;
+	width: 100%;
+	padding-top: 30px;
+}
+.eventMain .eventBlock{
+	float: left;
+    width: 100%;
+    border-bottom: 1px dashed rgba(204, 204, 204, 0.62);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.eventMain .eventBlock .dateContent{
+	float: left;
+	width: 65px;
+	background: linear-gradient(#cac8c8 21%,#f3f2f2,#cecccc);
+    text-align: center;
+    text-align: center;
+    margin-right: 10px;
+
+	
+}
+.eventMain .eventBlock .dateContent .date{
+	float: left;
+    width: 100%;
+    font-size: 17px;
+    padding-top: 3px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.eventMain .eventBlock .dateContent .month{
+	float: left;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 0 0;
+    font-size: 11px;
+    background: #d4674e;
+}
+.eventMain .eventBlock .dateContent .year{
+	font-size: 10px;
+    margin-top: -3px;
+    float: left;
+    color: #2d2b2b;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.eventMain .eventBlock  .eventDescription{
+	 float: left;
+    width: 443px;
+}
+.eventMain .eventBlock  .eventDescription h3{
+	font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #d4674e;
+    font-weight: 600;
+}
+.eventMain .eventBlock .eventDescription p{
+	margin-bottom: 0;
+}
+.eventMain .eventBlock .eventAlign{
+	padding-left: 0;
+}
+.eventMain .eventBlock .eventDescription a{
+	border-right: 1px solid #ccc;
+    padding-right: 13px;
+    margin-right: 8px;
+}
+.eventMain .eventBlock .eventDescription a:last-child{
+	border: 0;
+}
+@media(max-width: 1199px){
+	.randomthoughtMain .reviewBlock .reviewForm{
+		margin-left: -8px !important;
+	}
+	.randomthoughtMain .reviewBlock .reviewContent {
+	    
+	    margin-left: -8px !important;
+	}
+}
+@media(max-width: 600px){
+	.randomthoughtMain .reviewBlock figure img {
+	    width: 44px !important;
+
+	}
+	.randomthoughtMain .reviewBlock .reviewForm{
+		margin-left: -12px !important;
+	}
+	.randomthoughtMain .reviewBlock .reviewContent {
+	    
+	    margin-left: -12px !important;
+	}
+	.eventMain .eventBlock .eventDescription {
+	    
+	    width: 77% !important;
+	}
+}
+@media(max-width: 480px){
+	.randomthoughtMain .reviewBlock figure img {
+	    width: 44px !important;
+	}
+	.randomthoughtMain .reviewBlock .reviewForm {
+	    margin-left: 0 !important;
+	    padding-left: 15px !important;
+	}
+	.randomthoughtMain .reviewBlock .reviewContent {
+	   margin-left: 0 !important;
+	   padding-left: 15px !important;
+	}
+	.randomthoughtMain .reviewBlock .reviewrplyform{
+		padding-left: 28px !important;
+	}
+	.randomthoughtMain .reviewBlock .reviewrplyContent{
+		padding-left: 28px !important;
+	}
+	.eventMain .eventBlock .eventDescription {
+	    
+	    width: 74% !important;
+	}
+}
+
+
+/*------------comments-----------*/
+    .randomthoughtSection{
+	float: left;
+	width: 100%;
+	padding-top: 10px;
+
+}
+
+.reviewBlock{
+	float: left;
+    width: 100%;
+    /* margin-bottom: 15px; */
+    border-bottom: 1px solid rgba(204, 204, 204, 0.38);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.randomthoughtMain .reviewBlock figure img{
+	
+	width: 48px;
+	
+}
+.randomthoughtMain .reviewBlock .reviewContent{
+	padding-left: 0;
+	margin-left: -18px;
+}
+.randomthoughtMain  .reviewBlock .reviewContent h3{
+	margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.randomthoughtMain  .reviewBlock .reviewContent small{
+	font-size: 12px;
+}
+.randomthoughtMain .reviewBlock .reviewContent p{
+	margin-bottom: 5px;
+}
+.randomthoughtMain .reviewBlock .reviewContent .fa{
+	margin-left: 7px;
+    font-size: 16px;
+    color: #8b9ba2;
+}
+.randomthoughtMain .reviewBlock .reviewForm{
+	padding-left: 0;
+	margin-left: -18px;
+}
+.randomthoughtMain .reviewBlock .reviewForm .form-control{
+	height: 48px;
+    border-radius: 0;
+    border-color: #9a9a9a;
+    resize: none;
+	border-radius: 0;
+}
+.randomthoughtMain .reviewBlock .replayView{
+	float: left;
+    width: 100%;
+    padding-top: 13px;
+}
+.randomthoughtMain .reviewrplyBlock{
+	float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.randomthoughtMain .reviewrplyform .form-control{
+	height: 45px;
+    border-radius: 0;
+    border-color: #9a9a9a;
+    border-radius: 0;
+}
+.randomthoughtMain .btn{
+	border-radius: 0;
+}
+.randomthoughtMain .submitBtn{
+	color: #fff;
+    background: #339c9c;
+}
+.randomthoughtMain .form-group{
+	margin-bottom: 10px;
+}
+.randomthoughtMain .formBtns{
+	float: left;
+	width: 100%;
+}
+#btn-holder{
+	display: none;
+}
+ #comment::-webkit-scrollbar{
+	display: none;
+}

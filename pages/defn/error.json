@@ -1,0 +1,14 @@
+{
+    "title": "ERROR PAGE",
+    "description": "Error Page",
+    "template": "error",
+    "viewpage": "error",
+    "css": "error,errorPrint",
+    "js_preload": "",
+    "js_postload": "jquery,prettify",
+    "enabled": "true",
+    "slug": "ecode",
+    "keywords": "",
+    "robot": "",
+    "access": "public"
+}

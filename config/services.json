@@ -1,0 +1,193 @@
+{
+    "logiksDamp": {
+        "autocomplete": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "app",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "bizsuite": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "app",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "forgotPassword": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "app",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "notifications": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "app",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "verify": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "app",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "automator": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "bizlogger": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "companyConfig": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "dataMigrator": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "datalists": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "menuManager": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "myProfile": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "mySettings": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "sysScripts": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "templates": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "userComments": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "userManager": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "userRoles": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "module",
+            "format": "json",
+            "access_control": "development",
+            "privilege_model": []
+        },
+        "test123": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "app",
+            "format": "json",
+            "access_control": "public",
+            "privilege_model": []
+        },
+        "test1": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "moduleDev",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        },
+        "test2": {
+            "debug": "false",
+            "cache": "true",
+            "autoformat": "false",
+            "src": "modserviceDev",
+            "format": "json",
+            "access_control": "session",
+            "privilege_model": []
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+	"GLOBALS": {
+		"pages.modules": {
+			"access_control": "public"
+		},
+		"pages.popup": {
+			"access_control": "public"
+		},
+		"notesBoard":{
+			"access_control": "public"
+		},
+        "noteBook":{
+			"access_control": "public"
+		},
+		"planner":{
+			"access_control": "public"
+		},
+		"bookMarks":{
+			"access_control": "public"
+		},
+		"discussion":{
+			"access_control": "public"
+		},
+        "tools.journal":{
+			"access_control": "public"
+		},
+		"errands":{
+			"access_control": "public"
+		},
+		"emails":{
+			"access_control": "public"
+		},
+		"notifications":{
+			"access_control": "public"
+		}
+	},
+	"scopemap":{
+		"datalists":"masters.datalists",
+		"templates":"masters.templates",
+		"kmsChecklist":"kms.checklist",
+		"kmsTemplates":"kms.templates",
+		"companyConfig":"company",
+		"apiman":"manage.apiman",
+        "automator":"manage.automator",
+		"dataMigrator":"manage.migrator",
+		"menuManager":"manage.menu",
+		"userManager":"security.users",
+		"userRoles":"security.roles",
+        "editorInvoice":"accounts.invoices",
+        "editorPurchase":"accounts.purchase",
+		"eStore":"manage.estore"
+  }
+}

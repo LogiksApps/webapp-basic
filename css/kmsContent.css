@@ -1,0 +1,23 @@
+.contentKMS {
+    padding-left:20px;
+}
+
+.contentKMS  ul{
+    list-style: inherit !important;
+    margin-left: 20px;
+}
+.contentKMS  ol{
+    list-style: decimal !important;
+    margin-left: 20px;
+}
+.contentKMS table th{
+    padding:6px 10px;
+     border: 1px solid #ccc;
+}
+.contentKMS table td{
+    padding:10px 10px;
+     border: 1px solid #ccc;
+}
+.contentKMS table{
+    border: 1px solid #ccc;
+}

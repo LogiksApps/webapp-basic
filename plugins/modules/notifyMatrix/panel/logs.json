@@ -1,0 +1,84 @@
+{
+	"schema": "1.0",
+	"title": "Notify Matrix Logs",
+	"category": "Logs",
+	"privilege": "*",
+	"blocked": false,
+	"rowlink": false,
+	"rowsPerPage": 20,
+	"showExtraColumn": false,
+	"custombar": false,
+	"source": {
+		"type": "sql",
+		"table": "log_notifications",
+		"cols": "id,srcid,category,type,msg_to,msg_cc,msg_bcc,msg_subject,created_by,created_on",
+		"limit": 20
+	},
+	"actions": {
+	    "viewMatrix":{
+	        "icon": "fa fa-bullhorn",
+			"label": "Notification Matrix"
+	    }
+	},
+	"buttons": {
+		
+	},
+	"datagrid": {
+		"id": {
+			"label": "ID",
+			"hidden": false,
+			"searchable": true,
+			"sortable": true,
+			"groupable": false,
+			"classes": "",
+			"style": "width:50px;",
+			"formatter": "text"
+		},
+		"category": {
+			"label": "Category",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"type": {
+			"label": "Medium",
+			"searchable": true,
+			"sortable": true
+		},
+		"msg_to": {
+			"label": "Notify To (Email/SMS)",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"msg_cc": {
+			"label": "Notify CC",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"msg_bcc": {
+			"label": "Notify BCC",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"msg_subject":{
+		    "label": "Subject",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"created_by":{
+		    "label": "By",
+			"searchable": true,
+			"sortable": true,
+			"hidden": true
+		},
+		"created_on":{
+		    "label": "On",
+			"searchable": true,
+			"sortable": true
+		}
+	}
+}

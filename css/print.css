@@ -1,0 +1,23 @@
+@media print{
+    .formMain .tableBoxleft th{
+        background: #e2e2e2 !important;
+        
+    }
+      body.modules.reports.modal-open .reportholder, body.ledgerList.modal-open .reportholder{
+        display: none;
+    }
+     body.modules.reports.modal-open .modal-header,body.modules.reports.modal-open  .nav-tabs,
+     body.ledgerList.modal-open .modal-header,body.ledgerList.modal-open .nav-tabs,.modal-header,.nav-tabs{
+          display: none;
+     }
+     body.modules.reports.modal-open .popupPrint, body.ledgerList.modal-open .popupPrint{
+         display: none;
+     }
+     th,b{
+         font-family: sans-serif;
+     }
+     body.modules.reports.modal-open .modal-content{
+         border:0;
+     }
+     
+}

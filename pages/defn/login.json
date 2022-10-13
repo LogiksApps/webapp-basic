@@ -1,0 +1,15 @@
+{
+    "title": "Login Page",
+    "description": "",
+    "keywords": "",
+    "robot": "",
+    "slug": "",
+    "template": "fullpage",
+    "css": "style",
+    "js_preload": "",
+    "js_postload": "",
+    "modules_preload": "",
+    "modules_postload": "",
+    "enabled": "true",
+    "access": "public"
+}

@@ -1,0 +1,11 @@
+/z.todo/
+/tmp/
+/usermedia/
+/pluginsDev/
+misc/menus/apps/
+/todo.txt
+/misc/menus/cms/*
+z/
+
+.project
+.DS_Store

@@ -1,0 +1,48 @@
+{
+	"params": {
+		"background": "",
+		"force_span": "",
+		"force_style": "",
+		"force_open": "",
+		"allow_dnd": false,
+		"allow_server_messages": true,
+		"allow_closing": false,
+		"allow_controller": false,
+		"dashlet_allow_minimize": true,
+		"dashlet_allow_focus":true,
+		"dashlet_allow_closing": false,
+		"dashlet_allow_configure": false,
+		"dashlet_header": true
+	},
+	"order": ["e02b158731f59ff046286b341500891c", "b4941490487ee49a54a58cdf1e30f5be"],
+	"dashlets": {
+		"e02b158731f59ff046286b341500891c": {
+			"title": "Test1",
+			"descs": "your description goes here",
+			"photo": "test1.png",
+			"author": {
+				"name": "Bismay",
+				"email": "bismay@smartinfologiks.com"
+			},
+			"market": [],
+			"type": "php",
+			"source": "test1",
+			"column":2,
+			"dashid": "test1"
+		},
+		"b4941490487ee49a54a58cdf1e30f5be": {
+			"title": "Main 1",
+			"descs": "your description goes here",
+			"photo": false,
+			"author": {
+				"name": "Bismay",
+				"email": "bismay@smartinfologiks.com"
+			},
+			"market": [],
+			"type": "php",
+			"source": "source",
+			"folder": "test3",
+			"dashid": "test3\/main"
+		}
+	}
+}

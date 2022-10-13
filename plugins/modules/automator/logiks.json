@@ -1,0 +1,21 @@
+{
+    "name": "Automator Module",
+    "version": "",
+    "description": "",
+    "keywords": "",
+    "type": "modules",
+    "package": "",
+    "license": "",
+    "marketid": "",
+    "homepage": "",
+    "bugs": "",
+    "private": false,
+    "repository": {
+        "url": "",
+        "type": "git"
+    },
+    "policies": {
+        "clientManager.all_clients.allow_create_user": "false",
+        "automator.main.allow_create": "false"
+    }
+}

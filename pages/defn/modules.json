@@ -1,0 +1,11 @@
+{
+    "title": "Module Loader",
+    "description": "",
+    "slug": "module",
+    "template": "innerpage",
+    "viewpage": "modules",
+    "keywords": "",
+    "robot": "",
+    "enabled": "true",
+    "access": "public"
+}
